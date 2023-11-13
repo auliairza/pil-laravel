@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('pertemuan4/index');
    
 });
 
@@ -22,17 +22,17 @@ Route::get('about', function () {
     //$nama = 'Muhammad Aulia Irza';
     //$prodi = 'Teknologi Informasi';
     //return view('about')->with('nama', $nama);
-    return view('about');
+    return view('pertemuan4/about');
    
 });
 
 Route::get('profile', function () {
     $nama = 'Muhammad Aulia Irza';
-    return view('profile')->with('nama', $nama);
+    return view('pertemuan4/profile')->with('nama', $nama);
    
 });
 
 Route::get('mahasiswa', function () {
-    return view('mahasiswa');
+    return view('pertemuan4/mahasiswa');
    
 });
