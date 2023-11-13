@@ -35,8 +35,36 @@
       </div>
     </div>
   </nav>
-  <div class="container" style="margin-left: 20px">
+  <div class="container">
     <h1>Ini adalah halaman Home</h1>
+
+    <hr>
+    <div class="row">
+      <div class="col-sm-6">
+        <h4>What is Lorem Ipsum?</h4> 
+        <p style="text-align: justify">
+          <b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry 
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
+          took a gailey of type and scrambled it to make a type specimen book. it has survived not only five 
+          ceturies. but also the leap into electronic typesetting. remaining essentually unchanged. it was 
+          popularised in the 1960s. with the realese of letraset sheets containing Lorem Ipsum passeges. and 
+          more recenly with desktop publising software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+      </div>
+      <div class="col-sm-6">
+        <h4>Why Do We use It?</h4> 
+        <p style="text-align: justify">
+          it is a long estabilished fact that a reader will be distracted by the readable
+          content of a page when looking at its layout. the point of using Lorem Ipsum is that it has a more-or-less
+          normal distrubution of letters, as opposed to using Content here. Content here, making it look like readable
+          English. Many desktop publising packages and web page editors now use Lorem Ipsum as their default model
+          text. And a search for 'Lorem Ipsum' will uncover many web sites still in their infancy. Various have evolved
+          over the years. Sometimes by accident, Sometimes on purpose(injected humour and the like). 
+        </p> 
+      </div>
+    </div>
+
+
   </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
