@@ -33,16 +33,9 @@ Route::get('profile', function () {
 });
 
 Route::get('mahasiswa', function () {
-    return view('pertemuan4/mahasiswa');
-   
-});
-
-route::get('array',function(){
-    for ($i=1; $i <= 5; $i++){
-        echo 'Hello World' . $i . '<br>';
-    }
-
+    $npm = [123,124,125,126];
+    $nama = ['Muhammad','Aulia','Irza','Orca'];
+    $jumlah = count($npm);
+    return view('pertemuan4/mahasiswa',compact('npm','jumlah','nama'));  
     
-   
-    //return 'Halaman Array';
 });
