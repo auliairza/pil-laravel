@@ -35,6 +35,39 @@
   </nav>
   <div class="container" style="margin-left: 20px">
     <h1>Ini adalah halaman Mahasiswa</h1>
+
+    <table  class="table table-danger table-sm table-hover table-striped table-bordered text-center">
+      <thead>
+        <tr>
+          <th>NPM</th>
+          <th>Nama Mahasiswa</th>
+          <th>Jenis Kelammin</th>
+          <th colspan="2">TTL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>123</td>
+          <td>Aulia</td>
+          <td>Laki-Laki</td>
+          <td>21-09-2000</td>
+          <td rowspan="3">Kota Binjai</td>
+        </tr>
+        <tr>
+          <td>124</td>
+          <td>Muhammad</td>
+          <td>Laki-Laki</td>
+          <td>21-09-2000</td>
+        </tr>
+        <tr>
+          <td>125</td>
+          <td>Irza</td>
+          <td>Laki-Laki</td>
+          <td>21-09-2000</td>
+        </tr>
+      </tbody>
+    </table>
+    
   </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>    
