@@ -36,3 +36,15 @@ Route::get('mahasiswa', function () {
     return view('pertemuan4/mahasiswa');
    
 });
+
+route::get('array',function(){
+    $nilai_awal = 1;
+    while ($nilai_awal <= 10){
+        echo 'Hallo Laravel '.$nilai_awal. 'x<br>';
+        $nilai_awal++;
+    }
+
+    
+   
+    //return 'Halaman Array';
+});

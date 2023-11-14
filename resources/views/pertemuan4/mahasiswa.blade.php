@@ -51,7 +51,7 @@
           <td>Aulia</td>
           <td>Laki-Laki</td>
           <td>21-09-2000</td>
-          <td rowspan="3">Kota Binjai</td>
+          <td rowspan="3" >Kota Binjai</td>
         </tr>
         <tr>
           <td>124</td>
