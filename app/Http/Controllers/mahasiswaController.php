@@ -27,8 +27,8 @@ class mahasiswaController extends Controller
     public function mahasiswa()
     {
         //tambah mahasiswa tombol
-        $npm = [123, 124, 125];
-        return view('pertemuan4/mahasiswa', compact('npm'));
+        //$npm = [123, 124, 125];
+        //return view('pertemuan4/mahasiswa', compact('npm'));
     }
 
     /**
@@ -45,7 +45,7 @@ class mahasiswaController extends Controller
     public function show(string $id)
     {
         //detail isinya npm mahasiswa pake array yang nanti disimpan di id
-        $mahasiswaData = [
+        /*$mahasiswaData = [
             '123' => ['Nama' => 'Joni', 'Jenis Kelamin' => 'Laki-Laki', 'Tanggal Lahir' => '19-09-2000', 'Alamat' => 'Bogor'],
             '124' => ['Nama' => 'Dewi', 'Jenis Kelamin' => 'Perempuan', 'Tanggal Lahir' => '21-03-1999', 'Alamat' => 'Jakarta'],
             '125' => ['Nama' => 'Budi', 'Jenis Kelamin' => 'Laki-Laki', 'Tanggal Lahir' => '15-07-2001', 'Alamat' => 'Surabaya'],
@@ -57,7 +57,7 @@ class mahasiswaController extends Controller
             return view('pertemuan4.detailmahasiswa', ['id' => $id, 'mahasiswa' => $mahasiswa]);
         } else {
             abort(404, 'Mahasiswa tidak ditemukan');
-        }
+        }*/
     }
 
 

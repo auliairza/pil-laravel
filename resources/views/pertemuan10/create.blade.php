@@ -14,15 +14,15 @@
     <div class="row">
       <div class="col-sm-4">
         <label for="">NPM</label>
-        <input type="number" name="npm" class="form-control" placeholder="Input Kode Produk">
+        <input type="number" name="npm" class="form-control" placeholder="Input NPM">
       </div>
       <div class="col-sm-4">
         <label for="">Nama</label>
-        <input type="text" name="npm" class="form-control" placeholder="Input Kode Produk">
+        <input type="text" name="nama" class="form-control" placeholder="Input Nama">
       </div>
       <div class="col-sm-4">
-        <label for="">NPM</label>
-        <input type="number" name="npm" class="form-control" placeholder="Input Kode Produk">
+        <label for="">Tanggal Lahir</label>
+        <input type="date" name="tanggal lahir" class="form-control">
       </div>  
     </div>
     <div class="row">
