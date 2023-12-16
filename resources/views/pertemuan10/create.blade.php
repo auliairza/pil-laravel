@@ -11,26 +11,28 @@
   <div class="container">
     <a href="/">Kembali</a>
     <h1>Halaman Create</h1>
+    <form action="/" method="POST">
+      @csrf
     <div class="row">
       <div class="col-sm-4">
         <label for="">NPM</label>
-        <input type="number" name="npm" class="form-control" placeholder="Input NPM">
+        <input type="number" name="npm" id="" class="form-control" placeholder="Input NPM">
       </div>
       <div class="col-sm-4">
         <label for="">Nama</label>
-        <input type="text" name="nama" class="form-control" placeholder="Input Nama">
+        <input type="text" name="nama" id="" class="form-control" placeholder="Input Nama">
       </div>
       <div class="col-sm-4">
         <label for="">Tanggal Lahir</label>
-        <input type="date" name="tanggal lahir" class="form-control">
+        <input type="date" name="tgl_lahir" id="" class="form-control">
       </div>  
     </div>
     <div class="row">
       <div class="col-sm-4">
         <label for="">Jenis Kelamin</label>
         <select name="jk" id="" class="form-select">
-          <option value="1">Laki-Laki</option>
-          <option value="2">Perempuan</option>
+          <option>L</option>
+          <option>P</option>
         </select>
       </div>
       <div class="col-sm-4">
@@ -38,10 +40,12 @@
         <textarea name="alamat"class="form-control" id="" cols="30" rows="10"></textarea>
       </div>
       <div class="col-sm-4">
-        <button class="btn btn-primary mt-4" style="width: 100%">Simpan</button>
+        <button type="submit" class="btn btn-primary mt-4" style="width: 100%">Simpan</button>
       </div>
     </div>
+    </form>
   </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>      
 </body>
 </html>
