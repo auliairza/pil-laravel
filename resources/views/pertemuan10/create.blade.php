@@ -11,20 +11,33 @@
   <div class="container">
     <a href="/">Kembali</a>
     <h1>Halaman Create</h1>
+
+    @if ($errors->any())
+    <div class="pt-3">
+      <div class="alert alert-danger">
+        <ul>
+          @foreach ($errors->all() as $item)
+          <li>{{$item}}</li>
+          @endforeach
+        </ul>
+      </div>
+    </div>
+    @endif
+    
     <form action="/" method="POST">
       @csrf
     <div class="row">
       <div class="col-sm-4">
         <label for="">NPM</label>
-        <input type="number" name="npm" id="" class="form-control" placeholder="Input NPM">
+        <input type="number" name="npm" id="" class="form-control" placeholder="Input NPM" value="{{ Session::get('npm')}}">
       </div>
       <div class="col-sm-4">
         <label for="">Nama</label>
-        <input type="text" name="nama" id="" class="form-control" placeholder="Input Nama">
+        <input type="text" name="nama" id="" class="form-control" placeholder="Input Nama" value="{{ Session::get('nama')}}">
       </div>
       <div class="col-sm-4">
         <label for="">Tanggal Lahir</label>
-        <input type="date" name="tgl_lahir" id="" class="form-control">
+        <input type="date" name="tgl_lahir" id="" class="form-control" value="{{ Session::get('tgl_lahir')}}">
       </div>  
     </div>
     <div class="row">

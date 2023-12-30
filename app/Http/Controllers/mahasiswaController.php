@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\mahasiswa;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 use function PHPUnit\Framework\returnSelf;
 
@@ -15,7 +16,8 @@ class mahasiswaController extends Controller
     public function index()
     {
         //halaman home
-        return view('pertemuan10/index');
+        $mahasiswa = mahasiswa::orderBy('npm', 'asc')->get();
+        return view('pertemuan10/index')->with('mahasiswas', $mahasiswa);
     }
 
     /**
@@ -40,6 +42,24 @@ class mahasiswaController extends Controller
     public function store(Request $request)
     {
         //Menyimpan data
+        Session::flash('npm', $request->npm);
+        Session::flash('nama', $request->nama);
+        Session::flash('tgl_lahir', $request->tgl_lahir);
+
+
+        $request->validate(
+            [
+                'npm' => 'required|numeric|unique:mahasiswa,npm',
+                'nama' => 'required'
+            ],
+            [
+                'npm.required' => 'NPM Tidak Boleh Kosong',
+                'npm.numeric' => 'NPM Harus Dalam Bentuk Angka',
+                'npm.unique' => 'NPM Sudah Tersedia',
+                'nama.required' => 'Nama Mahasiswa Tidak Boleh Kosong!'
+            ]
+        );
+
         $data = [
             'npm' => $request['npm'],
             'nama_mahasiswa' => $request['nama'],
@@ -48,7 +68,7 @@ class mahasiswaController extends Controller
             'alamat' => $request['alamat']
         ];
         mahasiswa::create($data);
-        return redirect()->to('/');
+        return redirect()->to('/')->with('success', 'Data Berhasil Ditambahkan!');
     }
 
     /**
