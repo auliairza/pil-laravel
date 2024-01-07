@@ -9,7 +9,6 @@
 </head>
 <body>
   <div class="container">
-    <a href="/">Kembali</a>
     <h1>Halaman Create</h1>
 
     @if ($errors->any())
@@ -53,7 +52,14 @@
         <textarea name="alamat"class="form-control" id="" cols="30" rows="10"></textarea>
       </div>
       <div class="col-sm-4">
-        <button type="submit" class="btn btn-primary mt-4" style="width: 100%">Simpan</button>
+       <div class="row">
+        <div class="col-sm-6">
+          <button type="submit" class="btn btn-primary mt-4" style="width: 100%" >Simpan</button>
+        </div>
+        <div class="col-sm-6">
+          <a href="/" class="btn btn-secondary mt-4" style="width: 100%">Kembali</a>
+        </div>
+       </div>
       </div>
     </div>
     </form>
