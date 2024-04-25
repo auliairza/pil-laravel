@@ -9,6 +9,7 @@
 </head>
 <body>
   <div class="container">
+    <h5>.</h5>
     <h1>Halaman Create</h1>
 
     @if ($errors->any())
